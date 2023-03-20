@@ -13,9 +13,8 @@ class Parrot(Bird):
         self.color = color
     # Переопределите метод describe().
 
-
-    def describe(self):
-        if full == False:
+    def describe(self, full):
+        if not full:
             return super().describe()
         else:
             return (f'Попугай {self.name} — заметная птица, окрас её перьев '
@@ -32,8 +31,8 @@ class Penguin(Bird):
         self.genus = genus
     # Переопределите метод describe().
 
-    def describe(self):
-        if full == False:
+    def describe(self, full=False):
+        if not full:
             return super().describe()
         else:
             return (f'Размер пингвина {self.name} из рода {self.genus} '
@@ -49,5 +48,4 @@ kesha = Parrot('Ара', 'средний', 'красный')
 kowalski = Penguin('Королевский', 'большой', 'Aptenodytes')
 
 # Вызов метода у созданных объектов.
-kesha.describe()
 kowalski.describe(True)
