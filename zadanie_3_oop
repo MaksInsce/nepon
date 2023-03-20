@@ -31,7 +31,7 @@ class Penguin(Bird):
         self.genus = genus
     # Переопределите метод describe().
 
-    def describe(self, full=False):
+    def describe(self, full):
         if not full:
             return super().describe()
         else:
