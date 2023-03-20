@@ -48,4 +48,5 @@ kesha = Parrot('Ара', 'средний', 'красный')
 kowalski = Penguin('Королевский', 'большой', 'Aptenodytes')
 
 # Вызов метода у созданных объектов.
+kesha.describe()
 kowalski.describe(True)
