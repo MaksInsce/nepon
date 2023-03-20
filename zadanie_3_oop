@@ -12,31 +12,39 @@ class Parrot(Bird):
         super().__init__(name, size)
         self.color = color
     # Переопределите метод describe().
+
+
     def describe(self):
         if full == False:
-             return super().describe()
+            return super().describe()
         else:
-            return(f'Попугай {self.name} — заметная птица, окрас её перьев '
-                   f'— {self.color}, а резмер - {self.size}. Интересный факт: '
-                   f'попугаи чувствуют ритм, а вовсе не бездумно двигаются под музыку. '
-                   f'Если сменить композицию, то и темп движений птицы изменится.')
+            return (f'Попугай {self.name} — заметная птица, окрас её перьев '
+                    f'— {self.color}, а резмер - {self.size}. Интересный факт:'
+                    f' попугаи чувствуют ритм, '
+                    f'а вовсе не бездумно двигаются под музыку. '
+                    f'Если сменить композицию, '
+                    f'то и темп движений птицы изменится.')
+
 
 class Penguin(Bird):
     def __init__(self, name, size, genus):
         super().__init__(name, size)
         self.genus = genus
     # Переопределите метод describe().
+
     def describe(self):
         if full == False:
-             return super().describe()
+            return super().describe()
         else:
             return (f'Размер пингвина {self.name} из рода {self.genus} '
                     f'- {self.size}. Интересный факт: однажды группа геологов-'
-                    f'разведчиков похитила пингвинье яйцо, и их принялась преследовать '
-                    f'вся стая, не пытаясь, впрочем, при этом нападать. Посовещавшись, '
+                    f'разведчиков похитила пингвинье яйцо, '
+                    f'и их принялась преследовать '
+                    f'вся стая, не пытаясь, впрочем, '
+                    f'при этом нападать. Посовещавшись, '
                     f'похитители вернули птицам яйцо, и те отстали.')
-            
-            
+
+
 kesha = Parrot('Ара', 'средний', 'красный')
 kowalski = Penguin('Королевский', 'большой', 'Aptenodytes')
 
